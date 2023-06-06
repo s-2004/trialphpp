@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Raise A Case</title>
+</head>
+
+<body class="main_bg">
+    <div class="form">
+        <div class="form-text">
+            <h1><span><img src="art-1.png" alt=""></span>Raise Your Ticket<span>
+            <img src="art-1.png" alt=""></span></h1>
+            <p></p>
+        </div>
+        <div class="main-form">
+            <form action="index.php" method="get">
+                <div>
+                    <span>Employee ID</span>
+                    <input type="number" name="number" id="number" required>
+                </div>
+                <div>
+                    <span>Email Address</span>
+                    <input type="email" name="name" id="name" placeholder="personal or company" required> 
+                </div>
+                <div>
+                    <!-- <---this is the select option--->
+                    <span>Department</span>
+                    <select name="Department" id="Department" required>
+                        <option value=""><Department></option>
+                        <option value="Sales">1 Sales</option>
+                        <option value="Finance">2 Finance</option>
+                        <option value="Accounts">3 Accounts</option>
+                        <option value="Marketing">4 Marketing</option>
+                    </select>
+                    <!-- <---this is the select option--->
+                </div>
+</br>
+                <div>
+                    <span>Subject</span>
+                    <input type="text" placeholder="Type your query in detail">
+                </div>
+                <div>
+                    <span>Contact Number</span>
+                    <input type="number" name="number" id="number" placeholder="050XXXXXXX" required>
+                </div>
+                <div id="submit">
+                    <button type="submit"><a href="aftersubmit.html"> Submit </a></button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "Saasaa12!";
+$dbname = "employee";
+
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+?>
+</body>
+
+</html>
+
+
